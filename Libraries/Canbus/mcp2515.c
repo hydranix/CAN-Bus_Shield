@@ -146,7 +146,7 @@ uint8_t mcp2515_init(uint8_t speed)
 	SET(MCP2515_CS);
 	
 	// wait a little bit until the MCP2515 has restarted
-	_delay_us(10);
+	_delay_us(50);
 	
 	// load CNF1..3 Register
 	RESET(MCP2515_CS);
